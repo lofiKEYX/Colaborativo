@@ -22,17 +22,42 @@
         #Contacto {
             scroll-margin-top: 100px;
         }
+
         body {
             margin: 0;
             padding-top: 70px;
+        }
+
+        .back-button-fixed {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            background-color: #1c1c1c;
+            color: #ffffff;
+            padding: 10px 15px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            transition: all 0.3s ease;
+            z-index: 1050;
+        }
+
+        .back-button-fixed:hover {
+            background-color: #0044ff;
+            color: #ffffff;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
         }
     </style>
 </head>
 
 <body>
+
+    <a href="../../index.html" class="back-button-fixed">Volver al Curriculum</a>
+
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-dark">
         <div class="container">
-            <a class="btn btn-light me-3" href="../../index.html">Volver al Curriculum</a>
             <a class="navbar-brand" href="#">Cristóbal Zenteno Fernández</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
